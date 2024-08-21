@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>🎉 Happy Birthday!</h1>
+            <p class="message">Wishing you a day filled with love, joy, and cake!</p>
+            <div id="countdown" class="countdown">
+                <div id="days" class="time-segment"></div>
+                <div id="hours" class="time-segment"></div>
+                <div id="minutes" class="time-segment"></div>
+                <div id="seconds" class="time-segment"></div>
+            </div>
+            <div class="animation">
+                <img id="dancingCartoon" src="cat-dance.gif" alt="Dancing Cartoon">
+            </div>
+            <button onclick="playSound()">CLICK ME BRO!🎶</button>
+            <audio id="birthdaySong" src="happy-birthday-my-kitty-120918.mp3"></audio>
+        </div>
+    </header>
+
+    <!-- Popup Structure -->
+    <div id="popup" class="popup">
+        <div id="popupMessage" class="popup-message"></div>
+        <button id="closePopup" class="close-button" onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
